@@ -5,7 +5,7 @@ if [ -z "$1" ]
 fi
 sudo yum -y update
 sudo yum -y install python39 python3-pip git sshpass
-sudo yum remove python36
+sudo yum -y remove python36
 pip3 install ansible
 pip3 install kubernetes PyYAML jsonpatch jmespath
 ansible-galaxy collection install kubernetes.core
