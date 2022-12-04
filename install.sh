@@ -12,5 +12,5 @@ ansible-galaxy collection install kubernetes.core
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 sudo install -o root -g root -m 0755 kubectl /bin/kubectl
 kubectl version --client
-
+rm -f kubectl
 git clone https://$1@github.com/mrabbah/gitops
